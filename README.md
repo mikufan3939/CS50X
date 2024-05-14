@@ -1,2 +1,2 @@
 # CS50X
-All the problems from CS50X 2023/2024
+All the problems that I solved from CS50X 2023/2024.
