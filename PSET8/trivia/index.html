@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let correctAnswer = document.querySelector('#correct');
+                correctAnswer.addEventListener('click', function() {
+                    correctAnswer.style.backgroundColor = 'green';
+                    document.querySelector('#correction').innerHTML = 'Correct!';
+                });
+
+                let wrongAnswers = document.querySelectorAll('#wrong');
+                for (let i = 0; i < wrongAnswers.length; i++) {
+                    wrongAnswers[i].addEventListener('click', function() {
+                        wrongAnswers[i].style.backgroundColor = 'red';
+                        document.querySelector('#correction').innerHTML = 'Incorrect!';
+                    });
+                }
+
+                let check = document.querySelector('#check');
+                let freeAnswer = document.querySelector('#free');
+                check.addEventListener('click', function() {
+                    if (freeAnswer.value == '2007') {
+                        check.style.backgroundColor = 'green';
+                        document.querySelector('#freeCorrection').innerHTML = 'Correct!'
+                    } else {
+                        check.style.backgroundColor = 'red';
+                        document.querySelector('#freeCorrection').innerHTML = 'Incorrect!'
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which of these vocaloid songs was NOT made by Lamaze-p?</h3>
+                <button id="correct">Nyan Cat</button>
+                <button id="wrong">Triple Baka</button>
+                <button id="wrong">Po-Pi-Po</button>
+                <button id="wrong">Ochame Kinou</button>
+                <p id="correction"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In what year the Hatsune Miku Vocaloid was released?</h3>
+                <input id="free" type="text">
+                <button id="check">Check Answer</button>
+                <p id="freeCorrection"></p>
+            </div>
+        </div>
+    </body>
+
+</html>

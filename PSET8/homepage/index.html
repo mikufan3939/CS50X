@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            console.log("Ok this is getting out of hand");
+            document.addEventListener("DOMContentLoaded", function(){
+                let clickMe=document.querySelector('#footer-button');
+                let clicked=0;
+                let body=document.querySelector('#body');
+                let elements=document.querySelector('#disappear');
+                console.log("Pls tell me this works");
+                clickMe.addEventListener("click", function(){
+
+                    console.log("Is this even working");
+                    if(clicked==0)
+                    {
+                        body.style.backgroundImage='url("./images/faunabg.jpg")';
+                        elements.innerHTML=`<audio autoplay>
+                                                <source src="./images/sweep.mp3" type="audio/mp3" autoplay="true">
+                                            </audio>`;
+                        clicked=1;
+                    }
+                    else if(clicked==1)
+                    {
+                        body.style.backgroundImage='';
+                        elements.innerHTML=`<div class="d-flex">
+                                                <a href="https://www.youtube.com/@CeresFauna" class="mx-auto"><img src="./images/fauna.png" class="homepage-img"></a>
+                                                <a href="https://www.youtube.com/@OozoraSubaru" class="mx-auto"><img src="./images/subaru.png" class="homepage-img"></a>
+                                            </div>
+                                            <div class="d-flex">
+                                                <a href="https://www.youtube.com/@CeresFauna" class="mx-auto img-font">Fauna</a>
+                                                <a href="https://www.youtube.com/@OozoraSubaru" class="mx-auto img-font">Subaru</a>
+                                            </div>`
+                        clicked=0;
+                    }
+                });
+            });
+        </script>
+
+        <title>My Webpage</title>
+    </head>
+
+    <body class="background" id="body">
+        <nav class="navbar navbar-expand navigation-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-font"><img src="./images/frog.png" class="logo">Lucca Chiguti</a>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./anime.html">Anime and Manga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">Projects I want to do</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex">
+            <h1 class="homepage-header mx-auto">This is my Homepage!</h1>
+        </div>
+        <div class="d-flex">
+            <h2 class="homepage-header mx-auto">Go watch Hololive!</h2>
+        </div>
+        <div id="disappear">
+            <div class="d-flex">
+                <a href="https://www.youtube.com/@CeresFauna" class="mx-auto"><img src="./images/fauna.png" class="homepage-img"></a>
+                <a href="https://www.youtube.com/@OozoraSubaru" class="mx-auto"><img src="./images/subaru.png" class="homepage-img"></a>
+            </div>
+            <div class="d-flex">
+                <a href="https://www.youtube.com/@CeresFauna" class="mx-auto img-font">Fauna</a>
+                <a href="https://www.youtube.com/@OozoraSubaru" class="mx-auto img-font">Subaru</a>
+            </div>
+        </div>
+        <footer class="d-flex fixed-bottom justify-content-center align-items-center flex-column" style="height:55px;">
+                <p class="footer-font">What a nice foot!</p>
+                <button type="button" class="footer-font" id="footer-button">Fauna Sweep!</button>
+        </footer>
+    </body>
+</html>

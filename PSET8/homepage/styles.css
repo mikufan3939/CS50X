@@ -1,0 +1,117 @@
+.navigation-bar{
+    background-color: #5CFF99;
+    height:50%;
+    padding:0px;
+    border: 5px solid;
+    border-color:#28AFFC;
+}
+
+.background{
+    background-color: white;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+}
+
+.logo-font{
+        font-family: "Love Ya Like A Sister", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size:28pt;
+        color:#4F87FF;
+        margin-left:10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:14pt;
+    color:#28AFFC;
+    margin-left:10px;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 30,
+        'opsz' 100;
+    margin-right:50px;
+    font-size:32pt;
+    color:#28AFFC;
+}
+
+.dropdown-menu{
+    margin-left:87%;
+    margin-top:50px;
+}
+
+.homepage-header{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top:30px;
+}
+
+.homepage-img{
+    height:300px;
+    width:300px;
+}
+
+.img-font{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size:25pt;
+    text-decoration:none;
+    color:black;
+}
+
+.footer-font{
+    margin-bottom:0px;
+    background:none;
+    border:none;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:10    pt;
+}
+
+p{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size:14pt;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+h2{
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20pt;
+}
+
+h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size:18pt;
+}
+
+.hina{
+    height: 70%;
+    width: 80%;
+}
+
+footer{
+    background-color:#3DFCC6;
+}

@@ -1,0 +1,29 @@
+---HTML TAGS
+    <p> - Defines a paragraph.
+    <nav> - Defines the section used for navigation links.
+    <img> - Used to embed images.
+    <div> - Defines a generic container.
+    <a> - Defines a hyperlink.
+    <ul> and <li> - Defines an unordered list and the list's items respectively.
+    <h1>, <h2> and <h3> - Defines three different levels of section headings, going from most to least important in the page hierarchy.
+    <button> - Defines an element to be interacted with by the user.
+    <footer> - Defines a footer.
+    <audio> - Used to embed sounds.
+
+---CSS PROPERTIES
+    "background-color" - Sets the background color of an element.
+    "height" - Sets the height of an element.
+    "width" - Sets the width of an element.
+    "margin" - Sets the external margin of an element, can be used with top, bottom, left and right.
+    "padding" - Sets the padding (inner margin) on all sides of an element, can be used with top, bottom, left and right.
+    "border" - Sets the border width, border color and border style of an element.
+
+---JAVASCRIPT DESCRIPTION
+    I used JavaScript to add interativity to a button in the footer
+    section of the pages, when clicked it triggers a screen transition
+    and plays a song, and when clicked again it takes the page back to
+    normal and stops the song.
+
+---BOOTSTRAP DESCRIPTION
+    I used a lot of Bootstrap to help me construct the pages,
+    mainly it's flex functions for aligning and positioning the elements.
