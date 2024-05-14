@@ -1,0 +1,11 @@
+sort1 uses: BUBBLE SORT
+
+How do you know?: Because sort1 took a lower time on the already sorted lists, and bubble sort has a best case of O(n).
+
+sort2 uses: MERGE SORT
+
+How do you know?: Because sort2 was way faster than the other two on the random list, and merge sort is the most efficient out of the 3 sorting algorithms.
+
+sort3 uses: SELECTION SORT
+
+How do you know?: Because sort3 took almost the same time on the inverted, random and sorted lists, and selection sort has a best case that is equal to it's worst case.
