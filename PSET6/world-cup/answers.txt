@@ -1,0 +1,15 @@
+Times:
+
+10 simulations: 0m0.025s
+100 simulations: 0m0.025s
+1000 simulations: 0m0.033s
+10000 simulations: 0m0.087s
+100000 simulations: 0m0.723s
+1000000 simulations: 0m6.914s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: Some chances change order when increasing the number of simulations, but the order tends to stay roughly the same, with the teams with higher rating at the top and the ones with lower rating closer to the bottom.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: 100, because we are talking about Footbal, predicting exactly what is going to happen is impossible, so a rough estimate is already good enough to help us understant the power level of each team.
