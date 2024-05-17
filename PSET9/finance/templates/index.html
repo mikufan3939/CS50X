@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        {% for purchases in portfolio %}
+        <tr>
+            <td>{{purchases.symbol}}</td>
+            <td>{{purchases.shares}}</td>
+            <td>{{purchases.price | usd}}</td>
+            <td>{{purchases.total | usd}}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <th>Cash</th>
+            <td>{{cash[0].cash | usd}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <th>TOTAL</th>
+            <td>{{total | usd}}</td>
+        </tr>
+    </table>
+    <form method="post" action="/">
+        <div class="mb-3">
+            <p>Add Cash!</p>
+            <input autocomplete="off" class="form-control mx-auto w-auto" name="cash" placeholder="USD$" type="number">
+        </div>
+        <button type="submit" class="btn btn-primary">Add!</button>
+    </form>
+{% endblock %}
